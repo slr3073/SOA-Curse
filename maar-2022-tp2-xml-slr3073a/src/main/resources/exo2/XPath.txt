@@ -1,0 +1,30 @@
+XPath 1.0
+=========
+
+1. Sélectionner les titres de tous les films.
+
+/films/film/titre
+
+2. Sélectionner le résumé (texte uniquement) du film dont le titre est "Minority Report".
+
+/films/film[titre="Minority Report"]/resume/text/text()
+
+3. Sélectionner le nom (texte uniquement) du dernier réalisateur dans l'ordre du document XML.
+
+/films/realisateur[last()]/nom/text()
+
+4. Sélectionner le titre (texte uniquement) du deuxième film dans l'ordre du document.
+
+/films/film[2]/titre/text()
+
+5. Sélectionner les titres des films pour lesquels une image est disponible.
+
+/films/film[resume/image]/titre
+
+6. Sélectionner les dates des films de Scorsese.
+
+/films/film[@id_realisateur="real_01"]/@annee
+
+7. Renvoyer le nombre de films sortis en 2003.
+
+count(/films/film[@annee="2003"])

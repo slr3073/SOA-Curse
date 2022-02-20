@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?xml-stylesheet type="text/xml" href="sommaire.xsl"?>-->
+
+<sommaire langue="français">
+  <titre>Atlas Transpyrénéen des transports</titre>
+  <chapitre id="12">
+    <numero>1</numero>
+    <titre>Les populations</titre>
+  </chapitre>
+  <chapitre id="13">
+    <numero>2</numero>
+    <titre>Le réseau routier</titre>
+  </chapitre>
+  <chapitre id="14">
+    <numero>3</numero>
+    <titre>Le réseau fluvial</titre>
+  </chapitre>
+</sommaire>

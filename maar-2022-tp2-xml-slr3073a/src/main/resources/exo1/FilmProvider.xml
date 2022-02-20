@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<films>
+    <realisateur id_realisateur="real_01">
+        <prenom>Martin</prenom>
+        <nom>Scorsese</nom>
+    </realisateur>
+    <realisateur id_realisateur="real_02">
+        <prenom>Quentin</prenom>
+        <nom>Tarantino</nom>
+    </realisateur>
+    <realisateur id_realisateur="real_03">
+        <prenom>Steven</prenom>
+        <nom>Spielberg</nom>
+    </realisateur>
+    <film id_film="film_01" id_realisateur="real_03" annee="2001">
+        <titre>Minority Report</titre>
+        <resume>
+            <text>Un homme est victime d'une machination. Il est pris au piège d'un système qu'il a l'habitude de contrôler.</text>
+        </resume>
+    </film>
+    <film id_film="film_02" id_realisateur="real_02" annee="2003">
+        <titre>Kill Bill</titre>
+            <image source="killbill.jpg"/>
+        <resume>
+            <text>Une femme se venge des personnes qui ont voulu l'assassiner.</text>
+        </resume>
+    </film>
+    <film id_film="film_03" id_realisateur="real_01" annee="1995">
+        <titre>Casino</titre>
+        <resume>
+            <image source="deniro.jpg"/>
+            <text>Le monde de la mafia italienne mêlé à celui des casinos...</text>
+        </resume>
+    </film>
+    <film id_film="film_04" id_realisateur="real_01" annee="1990">
+        <titre>Les affranchis</titre>
+        <resume>
+            <text>Inspiré d'un fait réel : histoire de mafia italienne.</text>
+        </resume>
+    </film>
+</films>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<films xmlns:xsdi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.example.com/films/v1"
+    xsdi:schemaLocation="http://www.example.com/films/v1 FilmProviderEbauche.xsd">
+    <realisateur id_realisateur="real_01">
+        <prenom>Pedro</prenom>
+        <nom>Almodovar</nom>
+    </realisateur>
+    <film id_film="film_01" id_realisateur="real_01" annee="2006">
+        <titre>Volver</titre>
+        <resume>
+            <text>Une histoire transgénérationnelle</text>
+        </resume>
+    </film>
+</films>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.com/films/v1"
+           targetNamespace="http://www.example.com/films/v1" elementFormDefault="qualified">
+
+    <xsd:element name="prenom"/>
+    <xsd:element name="nom"/>
+    <xsd:element name="realisateur">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="prenom"/>
+                <xsd:element ref="nom"/>
+            </xsd:sequence>
+            <xsd:attribute name="id_realisateur" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="titre"/>
+    <xsd:element name="text"/>
+    <xsd:element name="resume">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="text"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="film">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="titre"/>
+                <xsd:element ref="resume"/>
+            </xsd:sequence>
+            <xsd:attribute name="id_film" use="required"/>
+            <xsd:attribute name="id_realisateur" use="required"/>
+            <xsd:attribute name="annee" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="films">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="realisateur"/>
+                <xsd:element ref="film"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
+
